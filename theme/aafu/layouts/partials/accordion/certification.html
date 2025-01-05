@@ -1,0 +1,17 @@
+{{ range.Site.Params.certification.list }}
+<h4 style="font: bold">{{- .title -}}</h4>
+
+{{ if .date }}
+
+<p>✅<i>{{ .state }} on {{ .date }}</i></p>
+
+{{ else }}
+
+<p>⌛ {{ .state }}</p>
+
+{{ end }}
+
+<p>{{ .description }}</p>
+<p><a href="{{ .link }}">Click here for more details!</a></p>
+
+{{ end }}

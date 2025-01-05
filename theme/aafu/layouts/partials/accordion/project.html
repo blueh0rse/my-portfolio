@@ -1,0 +1,6 @@
+{{ range.Site.Params.project.list }}
+<h4 style="font: bold">{{- .title -}}</h4>
+<p class="markdownify indent-8">{{- .description | markdownify -}}</p>
+<p>Technos used: <i>{{ .technos }}</i></p>
+<p><a href="{{ .url }}">Click here to see more!</a></p>
+{{ end }}

@@ -1,0 +1,187 @@
+baseURL: https://aafu.pages.dev/
+languageCode: en-us
+build:
+  writeStats: true
+params:
+  title: Leo G. Portfolio
+  author: Leo G.
+  description: My Portfolio
+  copyright: >-
+    Powered by [Hugo](https://gohugo.io/)
+  theme:
+    mainTheme: dark
+    showAttribute: true
+    singlePage: false
+  favicons:
+    use: true
+    metas: |2-
+              <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+              <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+              <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+              <link rel="manifest" href="site.webmanifest">
+              <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+              <link rel="shortcut icon" href="favicon.ico">
+  profile:
+    name: "Léo G."
+    tagline: IT Engineer
+    location: "Barcelona, ES"
+    photo: profile.jpg
+  social:
+    title: Links
+    list:
+      - icon: fab fa-linkedin-in
+        url: "https://www.linkedin.com/in/leo-gbx"
+        title: LinkedIn
+      - icon: fab fa-github
+        url: "https://github.com/blueh0rse"
+        title: GitHub
+      - icon: fas fa-user-circle
+        url: "https://blueh0rse.github.io"
+        title: Blog
+      - icon: fas fa-envelope
+        url: "mailto:mail@mail.com"
+        title: Mail
+  showInAccordion:
+    - item: aboutme
+      expand: true
+    - item: experience
+    - item: education
+    - item: project
+    - item: certification
+    - item: skill
+    - item: hobby
+  aboutme:
+    title: About Me
+    icon: fas fa-user
+    description:
+      Hi, I'm Léo! I'm a french IT engineer passionate about cybersecurity and development.
+      I enjoy tackling complex problems, building innovative tools, and continually expanding my skill set.
+  experience:
+    title: Work Experience
+    icon: fas fa-briefcase
+    list:
+      - position: Cybersecurity Engineer
+        dates: 10/2022 - 07/2023
+        company: Thales Services Numériques
+        tasks: |1-
+          - Responsible for good security practices
+          - Analyzed new vulnerabilities & implemented patches
+          - Developed automation scripts
+          - Secured CI/CD pipelines
+          - Maintained security conditions
+        details: I was working part-time for the CNES as a DevSecOps consultant and part-time for an internal
+        technos: docker, kubernetes, ansible, jenkins, gitlab-ci, artifactory, sonarqube, xray, linux, windows, python, bash, go, php
+      - position: Software & 4.0 Industry Engineer
+        dates: 09/2021 - 10/2022
+        company: Thales Alenia Space
+        tasks: |1-
+          - Complete core software development
+          - Developed a web app for instrument management
+          - Study of an IIoT solution of geolocation by Wirepas network
+          - Technical support on various projects
+        details: I was
+        technos: docker,
+      - position: Web Developer
+        dates: March 2021
+        company: MRC Montmagny
+        tasks: |1-
+          - 
+          - 
+          - 
+          -
+        details: I was
+        technos: docker,
+      - position: Fullstack Developer
+        dates: 09/2020 - 02/2021
+        company: Amoddex
+        tasks: |1-
+          - Converted an Excel workbook into a modern web application (SPA)
+          - Designed, developed and secured a REST API
+        details: I was
+        technos: docker,
+      - position: Fullstack Developer
+        dates: 01/2020 - 04/2020
+        company: Safran Engineering & Services
+        tasks: |1-
+          - Design and develop a web app to support system architecture software users
+          - Create and integrate technical documentation (interactive images, videos...)
+        details: I was
+        technos: docker,
+      - position: Web Developer
+        dates: 01/2019 - 03/2019
+        company: Sitcom Software
+        tasks: |1-
+          - Design and develop an invoice management tool
+          - Design and develop an SSL certificate management tool
+          - Participate in the testing of a mobile application update
+        details: I was
+        technos: docker,
+      - position: Web Developer
+        dates: June 2018
+        company: Sitcom Software
+        tasks: |1-
+          - Design and develop a statistics tool with dynamic graphs
+          - Participate in the testing of a mobile application update
+        details: I was
+        technos: docker,
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: MSc in Cybersecurity
+        college: Universitat Politecnica de Catalunya (UPC)
+        dates: 2023 - 2024
+        thesis_title: "Malware, Cryptography, Network Security, Application Security, Blockchain, Hardware Security, Software Defined Security, Traffic Monitoring & Analysis"
+        thesis_url: https://github.com/blueh0rse/MSCYBER23
+      - degree: MSc in Computer Science
+        college: CESI EI
+        dates: 2019 - 2022
+        thesis_title: "Web Development, Software Development, Cybersecurity, AI, Big Data, International Management, Project Management, Robotic, Network Administration, Database Management"
+      - degree: BSc in Computer Science
+        college: Lycée Théodore Ozenne
+        dates: 2017 - 2019
+        thesis_title: "Web Development, Software Development, Network Architecture, Network Management, Project Management"
+  project:
+    title: Projects
+    icon: fas fa-rocket
+    list:
+      - title: APYSCAN
+        description: APYSCAN is a Python-based fuzzing tool for exploring API parameters in URLs that I develop on my spare time. It validates inputs, loads payloads from a wordlist, and sends HTTP requests to test specified parameters. The tool logs successful and failed requests, supports retries, and is designed for efficiency and scalability.
+        technos: python, pytest, requests, flask
+        url: "https://github.com/blueh0rse/apyscan"
+      - title: HuntDown
+        description: I joined the HuntDown project for my MSc thesis, dedicating six months to enhancing its frontend and backend security, improving overall stability, and refining the user experience. HuntDown is a complex Go project allowing companies and individuals automating pentests though a web interface.
+        technos: go, docker, bash, mongodb, apache pulsar, vagrant, gobuster, nmap
+        url: "https://github.com/blueh0rse/MSCYBER23?tab=readme-ov-file#-thesis---huntdown"
+      - title: Ransom Worm
+        description: My favorite project of my MSc in Cybersecurity. We developped a multi-function worm capable of network propagation, privilege escalation, file encyption, keylogging, rootkit deployment... Infected machines await commands from our C2 server for further actions.
+        technos: python, C, bash,
+        url: "https://github.com/blueh0rse/ransom-worm"
+  certification:
+    title: Certifications
+    icon: fas fa-medal
+    list:
+      - title: "eJPTv2 (Junior Penetration Tester)"
+        state: Obtained
+        date: "29/03/2024"
+        description: >-
+          Demonstrates foundational skills in penetration testing and cybersecurity.
+        link: "https://blueh0rse.github.io/posts/ejpt-review/"
+  skill:
+    title: Skills
+    panelId: skill-panel
+    icon: fas fa-cogs
+    categories:
+      - title: "Comfortable With"
+        skills: "Python, Go, Bash, Javascript, Docker, Linux, Windows"
+      - title: "Practical Knowledge"
+        skills: "Node.js, Jenkins, DevSecOps"
+      - title: "Learning & Improving"
+        skills: "C, AWS"
+      - title: "Theorical"
+        skills: "Ansible, Vagrant"
+  hobby:
+    title: Hobbies
+    icon: fas fa-gamepad
+    list:
+      - hobby: On my spare time I always do things, I never get bored! I like to read books, to learn new skills, to ride my moto, to cook or to travel :)

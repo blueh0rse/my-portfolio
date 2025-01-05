@@ -53,14 +53,14 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          cd themes/aafu && hugo \
+          cd themes/aafu && npm install && hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-            --source themes/aafu
+          cp -r public/ ../../public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: themes/aafu/public
+          path: public/
 
   # Deployment job
   deploy:

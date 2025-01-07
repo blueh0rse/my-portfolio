@@ -1,22 +1,93 @@
 {{ range.Site.Params.experience.list }}
-<h4 style="text-decoration: underline">{{ .position }}</h4>
-<p {{if .tasks }}class="mb-0" {{ end }}>
-  {{ .dates | markdownify }} &middot; {{ if .url }}
-  <a href="{{ .url }}">{{ .company }}</a>
-  {{ else }} {{ .company }} {{ end }}
-</p>
-{{ if .tasks }}
-<div class="prose prose-stone dark:prose-invert max-w-none">
-  {{ .tasks | markdownify }}
-</div>
-{{ end }} {{ if .details }}
-<div class="prose prose-stone dark:prose-invert max-w-none">
-  {{ .details | markdownify }}
-</div>
-{{ end }} {{ if .technos }}
-</br>
-<div class="prose prose-stone dark:prose-invert max-w-none">
-  technos used: {{ .technos | markdownify }}
-</div>
-</br>
-{{ end }} {{ end }}
+  <h3 style="text-decoration: underline">{{ .position }}</h3>
+  <p {{ if .tasks }}class="mb-0" {{ end }}>
+    {{ .dates | markdownify }} &middot;
+    {{ if .url }}
+      <a href="{{ .url }}">{{ .company }}</a>
+    {{ else }}
+      {{ .company }}
+    {{ end }}
+  </p>
+
+  {{ if .tasks }}
+  <div class="prose prose-stone dark:prose-invert max-w-none">
+    {{ .tasks | markdownify }}
+  </div>
+  {{ end }}
+
+  {{ if .details }}
+  <div>
+    <button onclick="toggleDropdown(this)" class="dropdown-btn prose prose-stone dark:prose-invert max-w-none">
+      ▶️ View Details
+    </button>
+    <div class="dropdown-content">
+      {{ if .details }}
+      <div class="prose prose-stone dark:prose-invert max-w-none">
+        {{ .details | markdownify }}
+      </div>
+      {{ end }}
+      {{ if .details2 }}
+      <div class="prose prose-stone dark:prose-invert max-w-none">
+        {{ .details2 | markdownify }}
+      </div>
+      {{ end }}
+      {{ if .details3 }}
+      <div class="prose prose-stone dark:prose-invert max-w-none">
+        {{ .details3 | markdownify }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  {{ if .technos }}
+  <br>
+  <div class="prose prose-stone dark:prose-invert max-w-none">
+    💻 Technos used: {{ .technos | markdownify }}
+  </div>
+  </br>
+  {{ end }}
+{{ end }}
+
+
+<script>
+function toggleDropdown(button) {
+  const parent = button.closest('div');
+  const dropdownContent = parent.querySelector('.dropdown-content');
+
+  if (dropdownContent) {
+    dropdownContent.classList.toggle('hiden');
+
+    if (dropdownContent.classList.contains('hidden')) {
+      button.textContent = "▶️ View Details"; 
+    } else {
+      button.textContent = "🔽 Hide Details";
+    }
+  }
+}
+
+</script>
+
+<style>
+  .dropdown-btn {
+    color: #2563eb;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+  }
+  .dropdown-content {
+    display: none;
+    margin-top: 10px;
+  }
+  .dropdown-content .prose {
+    padding: 10px;
+  }
+  .dropdown-content.hiden {
+  display: block;
+  }
+
+</style>

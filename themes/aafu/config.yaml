@@ -69,7 +69,8 @@ params:
           - Developed automation scripts
           - Secured CI/CD pipelines
           - Maintained security conditions
-        details: I was working part-time for the CNES as a DevSecOps consultant and part-time for an internal
+        details: For three days a week, I was part of the software factory at CNES, where I focused on task automation and user ticket management. I also worked on securing Jenkins pipelines by conducting code analysis and ensuring security compliance. This included performing vulnerability assessments, staying updated on security trends, and providing guidance to project teams to maintain a secure development environment.
+        details2: The remaining two days were dedicated to a cross-functional internal team. My tasks included drafting security reports, analyzing Software Bills of Materials (SBOM), assessing vulnerabilities, and using tools like Dependency-Check to identify risks and enhance software security for different internal projects.
         technos: docker, kubernetes, ansible, jenkins, gitlab-ci, artifactory, sonarqube, xray, linux, windows, python, bash, go, php
       - position: Software & 4.0 Industry Engineer
         dates: 09/2021 - 10/2022
@@ -79,34 +80,34 @@ params:
           - Developed a web app for instrument management
           - Study of an IIoT solution of geolocation by Wirepas network
           - Technical support on various projects
-        details: I was
-        technos: docker,
+        details: Coming soon!
+        technos: python, js, docker, ansible, powershell, bash, swagger, cypress, dash, vue.js, sql server, vbs, jhipster, jira, bitbucket, gitlab, jupyter
       - position: Web Developer
         dates: March 2021
         company: MRC Montmagny
         tasks: |1-
-          - 
-          - 
-          - 
-          -
-        details: I was
-        technos: docker,
+          - Gathered client requirements and created a web interface mockup
+          - Developed the mockup into a fully functional web page after client validation
+          - Assisted the client in integrating the mockup into their existing JavaScript code
+          - Wrote JavaScript functions to support the integration and enhance interactivity
+        details: I worked closely with the client to understand their needs and created a web interface mockup. After getting their approval, I developed the mockup into a fully functional web page. Later, I assisted the client in integrating the design into their existing JavaScript code and wrote custom JavaScript functions to enhance interactivity and ensure smooth integration.
+        technos: HTML, JS, JQuery, Adobe XD
       - position: Fullstack Developer
         dates: 09/2020 - 02/2021
         company: Amoddex
         tasks: |1-
           - Converted an Excel workbook into a modern web application (SPA)
           - Designed, developed and secured a REST API
-        details: I was
-        technos: docker,
+        details: Coming soon!
+        technos: Node.js, Express.js, MongoDB, Angular, Docker, Adobe XD
       - position: Fullstack Developer
         dates: 01/2020 - 04/2020
         company: Safran Engineering & Services
         tasks: |1-
           - Design and develop a web app to support system architecture software users
           - Create and integrate technical documentation (interactive images, videos...)
-        details: I was
-        technos: docker,
+        details: Coming soon!
+        technos: HTML, JS, JQuery, MySQL, WordPress, Adobe Illustrator
       - position: Web Developer
         dates: 01/2019 - 03/2019
         company: Sitcom Software
@@ -114,16 +115,17 @@ params:
           - Design and develop an invoice management tool
           - Design and develop an SSL certificate management tool
           - Participate in the testing of a mobile application update
-        details: I was
-        technos: docker,
+        details: Coming soon!
+        technos: PHP, HTML, CSS, JS, MySQL, Bootstrap, jQuery
       - position: Web Developer
         dates: June 2018
         company: Sitcom Software
         tasks: |1-
           - Design and develop a statistics tool with dynamic graphs
           - Participate in the testing of a mobile application update
-        details: I was
-        technos: docker,
+        details: My primary tasks included designing and developing a social media performance tracking tool, managing and creating content for various social media platforms, and conducting interface tests for the mobile application. I started by drafting a requirements document with my manager, creating interface mockups that guided the tool's development. Each feature was validated in regular meetings.
+        details2: In parallel, I reached out to healthcare professionals on LinkedIn and pharmacies by phone to grow the app’s community. Additionally, I produced visuals, posted announcements on social media, and responded to user comments. For interface testing, I designed scenarios based on user cases (e.g., creating an account, modifying information), followed them step-by-step, and documented any bugs encountered.
+        technos: PHP, HTML, CSS, JS, MySQL, Bootstrap, jQuery
   education:
     title: Education
     icon: fas fa-graduation-cap
@@ -150,7 +152,7 @@ params:
         technos: python, pytest, requests, flask
         url: "https://github.com/blueh0rse/apyscan"
       - title: HuntDown
-        description: I joined the HuntDown project for my MSc thesis, dedicating six months to enhancing its frontend and backend security, improving overall stability, and refining the user experience. HuntDown is a complex Go project allowing companies and individuals automating pentests though a web interface.
+        description: I joined the HuntDown project for my MSc in Cybersecurity thesis, dedicating six months to enhancing its frontend and backend security, improving overall stability, and refining the user experience. HuntDown is a complex Go project allowing companies and individuals automating pentests though a web interface.
         technos: go, docker, bash, mongodb, apache pulsar, vagrant, gobuster, nmap
         url: "https://github.com/blueh0rse/MSCYBER23?tab=readme-ov-file#-thesis---huntdown"
       - title: Ransom Worm

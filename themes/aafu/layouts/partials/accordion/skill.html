@@ -1,4 +1,8 @@
-{{ range.Site.Params.skill.categories }}
-<h4 style="font: bold">{{ .title }}</h4>
+{{ range .Site.Params.skill.categories }}
+<h3 style="font: bold">
+  {{ if eq .title "Comfortable With" }} ✅ {{ else if eq .title "Practical Knowledge" }} 
+  🛠️ {{ else if eq .title "Learning & Improving" }} 📚 {{ else if
+  eq .title "Theoretical" }} 🧠 {{ end }} {{ .title }}
+</h3>
 <p>{{ .skills }}</p>
 {{ end }}

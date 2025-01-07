@@ -1,6 +1,10 @@
 {{ range.Site.Params.project.list }}
-<h4 style="font: bold">{{- .title -}}</h4>
+<h3 style="font: bold">
+  {{ if eq .title "APYSCAN" }} 🐍 {{ else if eq .title "HuntDown" }} 🤖 {{ else
+  if eq .title "Ransom Worm" }} 🪱 {{ end }}{{- .title -}}
+</h3>
 <p class="markdownify indent-8">{{- .description | markdownify -}}</p>
 <p>Technos used: <i>{{ .technos }}</i></p>
 <p><a href="{{ .url }}">Click here to see more!</a></p>
+<br />
 {{ end }}

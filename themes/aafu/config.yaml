@@ -167,6 +167,13 @@ params:
         description: >-
           Demonstrates foundational skills in penetration testing and cybersecurity.
         link: "https://blueh0rse.github.io/posts/ejpt-review/"
+      - title: "CBBH (Certified Bug Bounty Hunter)"
+        state: On Going
+        description: The CBBH certification validates practical skills in identifying, exploiting, and reporting vulnerabilities in web applications, emphasizing real-world bug bounty methodologies.
+        link: "https://academy.hackthebox.com/preview/certifications/htb-certified-bug-bounty-hunter"
+      - title: AWS Certified Cloud Practitioner
+        state: On Going
+        description: The AWS Certified Cloud Practitioner certification demonstrates foundational knowledge of AWS cloud concepts, services, security, and basic architectural principles.
   skill:
     title: Skills
     panelId: skill-panel

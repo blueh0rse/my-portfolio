@@ -1,6 +1,6 @@
 {{ range .Site.Params.education.list }}
 
-<h4 style="text-decoration: underline">{{ .degree }}</h4>
+<h3>🎓{{ .degree }}</h3>
 <p {{ if .thesis_title }}class="mb-0" {{ end }}>
   {{- .dates }} &middot; {{ .college -}}
 </p>
@@ -11,4 +11,4 @@
 </p>
 {{ else }}
 <p>Subjects: <i>{{ .thesis_title }}</i></p>
-{{ end }} {{ end }} {{ end }}
+{{ end }} {{ end }} <br />{{ end }}

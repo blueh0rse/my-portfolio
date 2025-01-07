@@ -1,5 +1,5 @@
 {{ range.Site.Params.certification.list }}
-<h4 style="font: bold">{{- .title -}}</h4>
+<h3 style="font: bold">{{- .title -}}</h3>
 
 {{ if .date }}
 
@@ -7,11 +7,12 @@
 
 {{ else }}
 
-<p>⌛ {{ .state }}</p>
+<p>⌛<i>{{ .state }}</i></p>
 
 {{ end }}
 
 <p>{{ .description }}</p>
 <p><a href="{{ .link }}">Click here for more details!</a></p>
+<br />
 
 {{ end }}
